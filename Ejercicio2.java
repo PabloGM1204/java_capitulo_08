@@ -7,9 +7,9 @@ public class Ejercicio2{
         System.out.print("Dime un número: ");
         long n = sc.nextLong();
         if(varias.Primo(n)){
-            System.out.println("Tu número no es primo");
-        }else{
             System.out.println("Tu número es primo");
+        }else{
+            System.out.println("Tu número no es primo");
         }
         sc.close();
     }
