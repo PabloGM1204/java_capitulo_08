@@ -9,5 +9,6 @@ public class Ejercicio4{
         System.out.print("Dime el exponente: ");
         int expo = sc.nextInt();
         System.out.println("La potencia de "+base+"^"+expo+" es: "+varias.Potencia(base, expo));
+        sc.close();
     }
 }
