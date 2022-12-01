@@ -19,6 +19,24 @@ public class varias{
         return capicuo;
     }
     /**
+     * Dice si un número es primo o no
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es un long
+     * 
+     * @return boolean de si es primo o no
+     */
+    public static boolean Primo(long x){
+        boolean esPrimo = false;
+        for(int i = 2; i<=x/2; i++){
+            if(x%i == 0){
+                esPrimo = true;
+            }
+        }
+        return esPrimo;
+    }
+    /**
      * Le da la vuelta a un número
      * 
      * @author Pablo GM
