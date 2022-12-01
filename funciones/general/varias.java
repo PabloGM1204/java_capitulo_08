@@ -1,4 +1,7 @@
 package funciones.general;
+
+import javax.swing.text.StyledEditorKit.BoldAction;
+
 public class varias{
     /**
      * Dice si un número es Capicuo o no
@@ -28,13 +31,33 @@ public class varias{
      * @return boolean de si es primo o no
      */
     public static boolean Primo(long x){
-        boolean esPrimo = false;
+        boolean esPrimo = true;
         for(int i = 2; i<=x/2; i++){
             if(x%i == 0){
-                esPrimo = true;
+                esPrimo = false;
             }
         }
         return esPrimo;
+    }
+    /**
+     * Te da el siguiente número primo a un número leido por teclado
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es un entero
+     * 
+     * @return te devuelve el número primo siguiente a X
+     */
+    public static int siguientePrimo(int x){
+        boolean salir = true;
+        while(salir){
+            if(Primo(x)){
+                salir = false;
+            }else{
+                x++;
+            }
+        }
+        return x;
     }
     /**
      * Le da la vuelta a un número
