@@ -60,6 +60,24 @@ public class varias{
         return x;
     }
     /**
+     * Calcula la pontencia de una base y un exponente dados
+     * 
+     * @author Pablo Gm
+     * 
+     * @param x un entero que corresponde a la base
+     * 
+     * @param y un entero que corresponde al exponente
+     * 
+     * @return devuelve la potencia
+     */
+    public static long Potencia(int x, int y){
+        int aux = x;
+        for(int i = 1; i<y; i++){
+            x *= aux;
+        }
+        return x;
+    }
+    /**
      * Le da la vuelta a un número
      * 
      * @author Pablo GM
