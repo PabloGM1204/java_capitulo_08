@@ -78,6 +78,27 @@ public class varias{
         return x;
     }
     /**
+     * Te dice cuantos digitos tiene tu número
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es un entero
+     * 
+     * @return devuelve un entero con la cantidad de digitos que tiene el número
+     */
+    public static int ContDigitos(int x){
+        int cont = 0;
+        if(x == 0){
+            cont = 1;
+        }else{
+            while(x>0){
+                cont++;
+                x/=10;
+            }
+        }
+        return cont;
+    }
+    /**
      * Le da la vuelta a un número
      * 
      * @author Pablo GM
