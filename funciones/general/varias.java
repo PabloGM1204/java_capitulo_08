@@ -99,6 +99,44 @@ public class varias{
         return cont;
     }
     /**
+     * Coge de el número con la posicion que le dice un digito
+     * 
+     * @author Pablo Gm
+     * 
+     * @param x es el número
+     * 
+     * @param y es la posición
+     * 
+     * @return el digito de la posición de tu número
+     */
+    public static int Dígito(int x, int y){
+        x = Volteado(x);
+        for(int i = 1; i<y; i++){
+            x/=10;
+        }
+        return x%10;
+    }
+    /**
+     * Te dice la posición de un número
+     * 
+     * @author Pablo GM
+     * 
+     * @param x
+     * 
+     * @param y 
+     * 
+     * @return devuel la posción del número
+     */
+    public static int PosicioDigito(int x, int y){
+        x = Volteado(x);
+        int cont = 1;
+        while(x%10 != y){
+            x /= 10;
+            cont++;
+        }
+        return cont;
+    }
+    /**
      * Le da la vuelta a un número
      * 
      * @author Pablo GM
