@@ -1,7 +1,4 @@
 package funciones.general;
-
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 public class varias{
     /**
      * Dice si un número es Capicuo o no
@@ -151,6 +148,80 @@ public class varias{
         for(int i = 0; i<y; i++){
             x/=10;
         }
+        return x;
+    }
+    /**
+     * Añade números a un número
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es el número al que añadir números
+     * 
+     * @param y es el número a añadir
+     * 
+     * @return devuelve el entero dado la vuelta
+     */
+    public static int pegaPorDetras(int x, int y){
+        x = Volteado(x);
+        int pos = ContDigitos(y);
+        x = x*(int)(Math.pow(10, pos))+y;
+        x = Volteado(x);
+        return x;
+    }
+    /**
+     * Añade números a un número
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es el número al que añadir números
+     * 
+     * @param y es el número a añadir
+     * 
+     * @return devuelve el entero mas los números que quieres añadir
+     */
+    public static int pegaPorDelante(int x, int y){
+        int pos = ContDigitos(y);
+        x = x*(int)(Math.pow(10, pos))+y;
+        return x;
+    }
+    /**
+     * Coge el intervalo de un número
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es el número inicial
+     * 
+     * @param y es el incio del intervalo
+     * 
+     * @param z es el final del intervalo
+     * 
+     * @return devuelve el intervalo
+     */
+    public static int trozoDeNumero(int x, int y, int z){
+        x = Volteado(x);
+        for(int i = 0; i<y; i++){
+            x/=10;
+        }
+        x = Volteado(x);
+        for(int i = 0; i<z; i++){
+            x/=10;
+        }
+        return x;
+    }
+    /**
+     * Pega dos números
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es el primer número
+     * 
+     * @param y es el segundo número
+     * 
+     * @return devuelve los números pegados
+     */
+    public static int juntaNumero(int x, int y){
+        int pos = ContDigitos(y);
+        x = x*(int)(Math.pow(10, pos))+y;
         return x;
     }
     /**
