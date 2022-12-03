@@ -137,6 +137,23 @@ public class varias{
         return cont;
     }
     /**
+     * Le das un número y las posiciones que quiere quitarle para deveolverte eso
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es un entero del número
+     * 
+     * @param y es un entero de la cantidad de posiciones que quieres quitar
+     * 
+     * @return devuelve el número con las posiciones dadas
+     */
+    public static int quitaPorDetras(int x, int y){
+        for(int i = 0; i<y; i++){
+            x/=10;
+        }
+        return x;
+    }
+    /**
      * Le da la vuelta a un número
      * 
      * @author Pablo GM
