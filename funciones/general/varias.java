@@ -67,12 +67,18 @@ public class varias{
      * 
      * @return devuelve la potencia
      */
-    public static long Potencia(int x, int y){
+    public static double Potencia(int x, int y){
         int aux = x;
-        for(int i = 1; i<y; i++){
-            x *= aux;
+        if(y<0){
+            return 0;
+        }else if(y == 0){
+            return 1;
+        }else{
+            for(int i = 1; i<y; i++){
+                x *= aux;
+            }
+            return x;
         }
-        return x;
     }
     /**
      * Te dice cuantos digitos tiene tu número
@@ -84,6 +90,27 @@ public class varias{
      * @return devuelve un entero con la cantidad de digitos que tiene el número
      */
     public static int ContDigitos(int x){
+        int cont = 0;
+        if(x == 0){
+            cont = 1;
+        }else{
+            while(x>0){
+                cont++;
+                x/=10;
+            }
+        }
+        return cont;
+    }
+    /**
+     * Te dice cuantos digitos tiene tu número
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es un entero
+     * 
+     * @return devuelve un entero con la cantidad de digitos que tiene el número
+     */
+    public static int ContDigitos(long x){
         int cont = 0;
         if(x == 0){
             cont = 1;
@@ -145,6 +172,24 @@ public class varias{
      * @return devuelve el número con las posiciones dadas
      */
     public static int quitaPorDetras(int x, int y){
+        for(int i = 0; i<y; i++){
+            x/=10;
+        }
+        return x;
+    }
+    /**
+     * Le das un número y las posiciones que quiere quitarle para deveolverte eso
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es un entero del número
+     * 
+     * @param y es un entero de la cantidad de posiciones que quieres quitar
+     * 
+     * @return devuelve el número con las posiciones dadas
+     */
+    public static int quitaPorDelante(int x, int y){
+        x = Volteado(x);
         for(int i = 0; i<y; i++){
             x/=10;
         }
