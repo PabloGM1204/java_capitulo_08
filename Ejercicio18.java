@@ -7,7 +7,6 @@ public class Ejercicio18{
         System.out.print("Dime un número: ");
         int n = sc.nextInt();
         System.out.println("Tu número en binario es: "+decimalBinario(n));
-
     }
     /**
      * Convierte un número decimal a binario
