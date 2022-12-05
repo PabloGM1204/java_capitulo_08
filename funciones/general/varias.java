@@ -241,4 +241,12 @@ public class varias{
         }
         return nv;
     }
+    public static long Volteado(long x){
+        long nv = 0;
+        while(x>0){
+            nv = (nv*10)+(x%10);
+            x/=10;
+        }
+        return nv;
+    }
 }
