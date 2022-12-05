@@ -1,6 +1,6 @@
 import funciones.arrays.*;
 import java.util.Scanner;
-public class Ejercicio20{
+public class Ejercicio20a28{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Este programa te da un array con valores aleatorios");
