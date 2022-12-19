@@ -1,10 +1,9 @@
 package funciones.arrays;
 import funciones.general.*;
-import funciones.arrays.*;
 public class arrayBidi{
     /**
      * Muestra el array bidimensional
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array a mostrar
@@ -20,7 +19,7 @@ public class arrayBidi{
     }
     /**
      * Genera un array Bidimensional
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param filas cuantas filas quieres
@@ -44,7 +43,7 @@ public class arrayBidi{
     }
     /**
      * Te devuelve una fila del array
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array
@@ -60,7 +59,7 @@ public class arrayBidi{
     }
     /**
      * Te devuelve una columna del array
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array
@@ -76,7 +75,7 @@ public class arrayBidi{
     }
     /**
      * Busca un número en el array
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array
@@ -99,7 +98,7 @@ public class arrayBidi{
     }
     /**
      * Devuelve el valor máximo de un array
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array
@@ -119,7 +118,7 @@ public class arrayBidi{
     }
     /**
      * Te dice si un número es punto de silla
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array
@@ -143,7 +142,7 @@ public class arrayBidi{
     }
     /**
      * Te da la diagonal
-     * 
+     * <p>
      * @author Pablo GM
      * 
      * @param a es el array
