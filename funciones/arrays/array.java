@@ -1,4 +1,5 @@
 package funciones.arrays;
+import funciones.general.varias;
 public class array {
     /**
      * Muestra el array
@@ -187,6 +188,39 @@ public class array {
                 a[i] = a[i + 1];
             }
         a[a.length - 1] = aux;
+        }
+        return a;
+    }
+    /**
+     * Del array que le pasamos buscamos los primos y se los ponemos al otro array
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es el array para comprobar
+     * 
+     * @return en array con los primos del primero
+     */
+    public static int[] filtraPrimos(int x[]){
+        int contPrimos = 0;
+        for(int i = 0; i<x.length; i++){
+            int n = x[i];
+            if(varias.Primo(n)){
+                contPrimos++;
+            }
+        }
+        int[] a = new int[contPrimos];
+        boolean esPrimo = true;
+        int cont = 0;
+        for(int i = 0; i<x.length; i++){
+            for(int j = 2; j<=x[i]/2; j++){
+                if(x[i]%j == 0){
+                    esPrimo = false;
+                }
+            }
+            if(esPrimo){
+                a[cont++] = x[i];
+            }
+            esPrimo = true;
         }
         return a;
     }
