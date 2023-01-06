@@ -224,4 +224,36 @@ public class array {
         }
         return a;
     }
+    /**
+     * Del array que le pasamos buscamos los capicuos y se los ponemos al otro array
+     * 
+     * @author Pablo GM
+     * 
+     * @param x es el array para comprobar
+     * 
+     * @return en array con los capicuos del primero
+     */
+    public static int[] filtraCapicuas(int x[]){
+        boolean existe = false;
+        int cont = 0;
+        for(int i = 0; i<x.length; i++){
+            int n = x[i];
+            if(varias.Capicuo(n)){
+                cont++;
+                existe = true;
+            }
+        }
+        if(!existe){
+            int[] resultado = {-1};
+            return resultado;
+        }
+        int[] resultado = new int[cont];
+        cont = 0;
+        for(int i = 0; i<x.length; i++){
+            if(varias.Capicuo(x[i])){
+                resultado[cont++] = x[i];
+            }
+        }
+        return resultado;
+    }
 }

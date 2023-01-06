@@ -270,28 +270,26 @@ public class varias{
         return x;
     }
     /**
-     * Le da la vuelta a un número
-     * 
-     * @author Pablo GM
-     * 
-     * @param x es un entero
-     * 
-     * @return devuelve el entero dado la vuelta
-     */
-    public static int Volteado(int x){
-        int nv = 0;
-        while(x>0){
-            nv = (nv*10)+(x%10);
-            x/=10;
-        }
-        return nv;
+    * Le da la vuelta a un número.
+    *
+    * @author Pablo GM
+    *
+    * @param x número al que se le quiere dar la vuelta
+    *
+    * @return  número volteado 
+    */
+    public static int Volteado(int x) {
+    if (x < 0) {
+        return -Volteado(-x);
     }
-    public static long Volteado(long x){
-        long nv = 0;
-        while(x>0){
-            nv = (nv*10)+(x%10);
-            x/=10;
-        }
-        return nv;
+
+    int volteado = 0;
+
+    while (x > 0) {
+        volteado = (volteado * 10) + (x % 10);
+        x = x / 10;
+    }
+
+    return volteado;
     }
 }
