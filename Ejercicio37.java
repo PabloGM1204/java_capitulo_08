@@ -15,34 +15,34 @@ public class Ejercicio37{
             int x = nv%10;
             switch (x) {
                 case 1:
-                    resultado += ". - - - -";
+                    resultado += ". - - - - ";
                     break;
                 case 2:
-                    resultado += ". . - - -";
+                    resultado += ". . - - - ";
                     break;
                 case 3:
-                    resultado += ". . . - -";
+                    resultado += ". . . - - ";
                     break;
                 case 4:
-                    resultado += ". . . . -";
+                    resultado += ". . . . - ";
                     break;
                 case 5:
-                    resultado += ". . . . .";
+                    resultado += ". . . . . ";
                     break;
                 case 6:
-                    resultado += "- . . . .";
+                    resultado += "- . . . . ";
                     break;
                 case 7:
-                    resultado += "- - . . .";
+                    resultado += "- - . . . ";
                     break;
                 case 8:
-                    resultado += "- - - . .";
+                    resultado += "- - - . . ";
                     break;
                 case 9:
-                    resultado += "- - - - .";
+                    resultado += "- - - - . ";
                     break;
                 case 0:
-                    resultado += "- - - - -";
+                    resultado += "- - - - - ";
                     break;
                 default:
                 break;
