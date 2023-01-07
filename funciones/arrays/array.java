@@ -256,4 +256,36 @@ public class array {
         }
         return resultado;
     }
+    public static int[] filtraCon7(int x[]){
+        boolean existe = false;
+        int cont = 0;
+        for(int i = 0; i<x.length; i++){
+            int n = x[i];
+            do{
+                if(n % 10 == 7){
+                    cont++;
+                    existe = true;
+                }
+                n /= 10;
+            }while(n != 0);
+        }
+        if(!existe){
+            int[] resultado = {-1};
+            return resultado;
+        }
+        int[] resultado = new int[cont];
+        cont = 0;
+        boolean hay = false;
+        for(int i = 0; i<x.length; i++){
+            int n = x[i];
+            do{
+                if(n % 10 == 7){
+                    resultado[cont++] = x[i];
+                    hay = true;
+                }
+                n /= 10;
+            }while(n != 0 && hay);
+        }
+        return resultado;
+    }
 }
